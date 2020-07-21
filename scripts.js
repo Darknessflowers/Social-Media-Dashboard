@@ -1,11 +1,13 @@
-const toggleButton = document.querySelector('#themeswitcher');
+const toggleButton = document.querySelector('#checkbox');
+const html = document.querySelector('html');
 
 function switchTheme(e) {
-  if(e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+  if(toggleButton.checked) {
+    html.className = "theme-light";
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    html.className = "theme-dark";
   }
 }
 
-toggleButton.addEventListener('change', switchTheme, false);
+toggleButton.addEventListener('change', switchTheme);
+window.addEventListener('load', switchTheme);
