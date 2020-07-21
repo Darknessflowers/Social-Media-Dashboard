@@ -35,6 +35,7 @@ time, mark, audio, vide {
   --text-grayish-blue: hsl(228, 12%, 44%); /* Dark Grayish Blue (Text) */
   --card-hover: #e1e3f0;
   --toggle: hsl(230, 22%, 74%);
+  --overview-heading: hsl(228, 12%, 44%);
 }
 .theme-dark {
   --bg-top: hsl(232, 19%, 15%);
@@ -44,9 +45,10 @@ time, mark, audio, vide {
   --text-grayish-blue: hsl(228, 34%, 66%);
   --card-hover: #333a56;
   --toggle: linear-gradient(to right, hsl(210,78%,56%), hsl(146,68%,55%));
+  --overview-heading: #fff;
 }
 body {
-  background: linear-gradient(var(--bg-top) 25%, var(--bg-bottom) 25%, var(--bg-bottom) 60%, var(--bg-bottom) 100%);
+  background: linear-gradient(var(--bg-top) 30%, var(--bg-bottom) 30%, var(--bg-bottom) 60%, var(--bg-bottom) 100%);
   min-height: 100vh;
   color: var(--text-dark-blue);
   font-family: 'Inter', sans-serif;
@@ -140,7 +142,7 @@ header {
 
 .overview h2 {
   grid-column: 1/-1;
-  color: var(--text-grayish-blue);
+  color: var(--overview-heading);
 }
 
 .attribution {
@@ -216,7 +218,7 @@ input:checked + .slider:before {
   color: var(--text-grayish-blue);
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 12px;
 }
 .handleSocial img {
   margin-right: 10px;
@@ -237,6 +239,7 @@ input:checked + .slider:before {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: var(--text-grayish-blue);
 }
 .positiveTrend, 
 .negativeTrend {
@@ -262,7 +265,7 @@ input:checked + .slider:before {
   margin-bottom: 30px;
 }
 .socialInfo h3 {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--text-grayish-blue);
   margin-bottom: 0px;  
 }
